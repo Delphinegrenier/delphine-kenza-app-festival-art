@@ -1,0 +1,15 @@
+:root {
+  --gris: #323232;
+  --grisfonce: #222222;
+  --noir: #161617;
+  --blanc: #ffffff;
+  --vertpale: #b8ffcc;
+  --vertfonce: #6a9275;
+  --Noto: "NotoSans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+/*------------- Styles Généraux -------------*/
+
+/*------------- Section Héro -------------*/

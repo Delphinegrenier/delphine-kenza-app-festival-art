@@ -1,0 +1,61 @@
+:root {
+  --gris: #323232;
+  --grisfonce: #222222;
+  --noir: #161617;
+  --blanc: #ffffff;
+  --vertpale: #b8ffcc;
+  --vertfonce: #6a9275;
+  --Noto: "NotoSans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+/*------------- Styles Généraux -------------*/
+
+* {
+  font-family: var(--Noto);
+}
+
+h1,
+.h1 {
+  font-size: 55px;
+  font-weight: 400;
+  color: var(--blanc);
+}
+
+h2,
+.h2 {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--vertpale);
+}
+
+h3,
+.h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--vertfonce);
+}
+
+h4,
+.h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--noir);
+}
+
+h5,
+.h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blanc);
+}
+
+h6,
+.h6 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blanc);
+}
+
+/*------------- Section Héro -------------*/
