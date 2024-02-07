@@ -11,5 +11,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 /*------------- Styles Généraux -------------*/
+body{
+  background-color: var(--noir);
+}
 
+.navbar{
+  background-color: var(--grisfonce);
+}
+
+.logo{
+  width: 102px;
+}
+
+.profil{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50px;
+}
 /*------------- Section Héro -------------*/
