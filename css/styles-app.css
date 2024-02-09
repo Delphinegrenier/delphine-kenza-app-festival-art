@@ -15,12 +15,16 @@ body{
   background-color: var(--noir);
 }
 
+footer{
+  background-color: var(--grisfonce);
+}
+
 .navbar{
   background-color: var(--grisfonce);
 }
 
 .logo{
-  width: 102px;
+  max-width: 134px;
 }
 
 .profil{
@@ -28,5 +32,20 @@ body{
   height: 35px;
   object-fit: cover;
   border-radius: 50px;
+}
+
+.barre{
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: var(--gris);
+  width: 2.5px;
+  height: 42px;
+}
+
+.projet{
+  color: var(--blanc);
+  font-weight: 100;
+  font-size: 15px;
 }
 /*------------- Section Héro -------------*/
