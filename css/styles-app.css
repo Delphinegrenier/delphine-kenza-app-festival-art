@@ -16,10 +16,7 @@ body{
   padding-top: 65px;
 }
 
-footer{
-  padding: 1rem;
-  background-color: var(--grisfonce);
-}
+/*------------- Section Header -------------*/
 
 .navbar{
   background-color: var(--grisfonce);
@@ -36,48 +33,6 @@ footer{
   border-radius: 50px;
 }
 
-.barre{
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-color: var(--gris);
-  width: 2.5px;
-  height: 42px;
-}
-
-.projet{
-  color: var(--blanc);
-  font-weight: 100;
-  font-size: 15px;
-}
-
-.bg-dark{
-  background-color: var(--noir);
-}
-
-.form-control{
-  
-  border-color: var(--vertpale);
-  border-left: none;
-  border-radius: 50px;
-}
-
-.input-group-text{
-  background-color: rgb(0,0,0,0);
-  border-radius: 50px;
-  border-right: none;
-  border-color: var(--vertpale);
-  color: var(--vertpale);
-}
-
-.input-group{
-  margin-left: 5px;
-}
-
-.form-control::placeholder{
-  color: var(--blanc);
-}
-
 .navbar-toggler-icon{
   width: 24px;
 }
@@ -85,4 +40,80 @@ footer{
 .navbar-toggler{
   border: none;
 }
-/*------------- Section Héro -------------*/
+
+/*------------- Section Main -------------*/
+
+.form-control{
+  border-color: var(--vertpale);
+  border-left: none;
+  border-radius: 50px;
+}
+
+.form-control::placeholder{
+  color: var(--blanc);
+  font-size: 11px;
+}
+
+.input-group-text{
+  border-radius: 50px;
+  border-right: none;
+  border-color: var(--vertpale);
+  color: var(--vertpale);
+}
+
+.input-group{
+  margin-left: 9px;
+}
+
+
+.recommend{
+  overflow: hidden;
+}
+
+.no-bullets{
+  width: 600px;
+  list-style-type: none;
+}
+
+.btn{
+margin: 5px;
+margin-top: 1rem;
+border-radius: 50px;
+font-size: 10px;
+font-weight: 800;
+}
+
+.btn-outline-primary{
+  border-color: var(--vertpale);
+  color: var(--vertpale);
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--vertpale);
+  color: var(--noir);
+  border: none;
+}
+
+.btn-outline-secondary{
+  border-color: var(--blanc);
+  color: var(--blanc);
+}
+
+.btn-outline-secondary:hover{
+  background-color: var(--blanc);
+  color: var(--noir);
+  border: none;
+}
+
+/*------------- Section Footer -------------*/
+
+footer{
+  padding: 1rem;
+  background-color: var(--grisfonce);
+}
+
+.projet{
+  color: var(--blanc);
+  font-weight: 100;
+  font-size: 15px;
+}
