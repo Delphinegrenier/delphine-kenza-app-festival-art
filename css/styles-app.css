@@ -13,9 +13,11 @@
 /*------------- Styles Généraux -------------*/
 body{
   background-color: var(--noir);
+  padding-top: 65px;
 }
 
 footer{
+  padding: 1rem;
   background-color: var(--grisfonce);
 }
 
@@ -47,5 +49,22 @@ footer{
   color: var(--blanc);
   font-weight: 100;
   font-size: 15px;
+}
+
+.form-control{
+  border-color: var(--vertpale);
+  border-radius: 50px;
+}
+
+.form-control::placeholder{
+  color: var(--blanc);
+}
+
+.navbar-toggler-icon{
+  width: 24px;
+}
+
+.navbar-toggler{
+  border: none;
 }
 /*------------- Section Héro -------------*/
