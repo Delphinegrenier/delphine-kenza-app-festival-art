@@ -81,9 +81,19 @@ body {
 
 
 
-.card {
+.card-vedette {
+  background-color: var(--grisfonce);
+  max-width: 200px;
   border: none;
   border-radius: 11px;
+}
+
+.card-vedette:hover{
+  background-color: var(--gris);
+}
+
+.card-body{
+  padding: 10px;
 }
 
 .img-art {
@@ -91,10 +101,10 @@ body {
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   object-fit: cover;
-  object-position: 50% 100%;
 }
 
 .artist {
+  margin-bottom: 11px;
   font-size: 10px;
   font-weight: 200;
 }
@@ -108,11 +118,13 @@ body {
 }
 
 .date {
+  margin-bottom: 10px;
   font-size: 9px;
 }
 
 .informe{
   font-size: 9px;
+  margin: 0px 0px 0px 0px;
 }
 
 .bi-calendar {
@@ -125,6 +137,10 @@ body {
 
 .bi-chevron-right{
   font-size: 9px;
+}
+
+.vedette{
+  width: 140%;
 }
 
 /*------------- Section Footer -------------*/
