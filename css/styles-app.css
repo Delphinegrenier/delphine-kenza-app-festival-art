@@ -54,7 +54,7 @@ body {
 }
 
 .input-group-text {
-  margin-left: 25px;
+  margin-left: 12px;
   border-radius: 50px;
   border-right: none;
   border-color: var(--vertpale);
@@ -67,7 +67,7 @@ body {
 
 .no-bullets {
   width: 600px;
-  padding-left: 28px;
+  padding-left: 13px;
   list-style-type: none;
 }
 
@@ -79,20 +79,28 @@ body {
   font-weight: 800;
 }
 
-
-
 .card-vedette {
   background-color: var(--grisfonce);
   max-width: 200px;
-  border: none;
   border-radius: 11px;
+  border: none;
 }
 
-.card-vedette:hover{
+.card-vedette:hover {
   background-color: var(--gris);
 }
 
-.card-body{
+.card-autre {
+  background-color: var(--grisfonce);
+  border-radius: 11px;
+  border: none;
+}
+
+.card-autre:hover {
+  background-color: var(--gris);
+}
+
+.card-body {
   padding: 10px;
 }
 
@@ -103,13 +111,21 @@ body {
   object-fit: cover;
 }
 
+.img-autres {
+  height: 20vh;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .artist {
   margin-bottom: 11px;
   font-size: 10px;
   font-weight: 200;
 }
 
-.artist-photo{
+.artist-photo {
   width: 20px;
   height: 20px;
   object-fit: cover;
@@ -118,11 +134,10 @@ body {
 }
 
 .date {
-  margin-bottom: 10px;
   font-size: 9px;
 }
 
-.informe{
+.informe {
   font-size: 9px;
   margin: 0px 0px 0px 0px;
 }
@@ -135,11 +150,11 @@ body {
   font-size: 9px;
 }
 
-.bi-chevron-right{
+.bi-chevron-right {
   font-size: 9px;
 }
 
-.vedette{
+.vedette {
   width: 140%;
 }
 
