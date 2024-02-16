@@ -11,22 +11,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 /*------------- Styles Généraux -------------*/
-body{
+body {
   background-color: var(--noir);
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 /*------------- Section Header -------------*/
 
-.navbar{
-  background-color: var(--grisfonce);
-}
-
-.logo{
+.logo {
   max-width: 134px;
 }
 
-.profil{
+.profil {
   width: 35px;
   height: 35px;
   object-fit: cover;
@@ -34,29 +31,29 @@ body{
   margin-right: 10px;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   width: 24px;
   margin: 5px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
 /*------------- Section Main -------------*/
 
-.form-control{
+.form-control {
   border-color: var(--vertpale);
   border-left: none;
   border-radius: 50px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: var(--blanc);
   font-size: 11px;
 }
 
-.input-group-text{
+.input-group-text {
   margin-left: 25px;
   border-radius: 50px;
   border-right: none;
@@ -64,53 +61,80 @@ body{
   color: var(--vertpale);
 }
 
-.recommend{
+.recommend {
   overflow: hidden;
 }
 
-.no-bullets{
+.no-bullets {
   width: 600px;
+  padding-left: 28px;
   list-style-type: none;
 }
 
-.btn{
-margin-right: 5px;
-margin-top: 1rem;
-border-radius: 50px;
-font-size: 10px;
-font-weight: 800;
+.btn {
+  margin-right: 5px;
+  margin-top: 1rem;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
 }
 
-.btn-outline-primary{
-  border-color: var(--vertpale);
-  color: var(--vertpale);
-}
 
-.btn-outline-primary:hover{
-  background-color: var(--vertpale);
-  color: var(--noir);
+
+.card {
   border: none;
+  border-radius: 11px;
 }
 
-.btn-outline-secondary{
-  border-color: var(--blanc);
-  color: var(--blanc);
+.img-art {
+  height: 20vh;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  object-fit: cover;
+  object-position: 50% 100%;
 }
 
-.btn-outline-secondary:hover{
-  background-color: var(--blanc);
-  color: var(--noir);
-  border: none;
+.artist {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.artist-photo{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 9px;
+}
+
+.informe{
+  font-size: 9px;
+}
+
+.bi-calendar {
+  font-size: 9px;
+}
+
+.bi-clock-fill {
+  font-size: 9px;
+}
+
+.bi-chevron-right{
+  font-size: 9px;
 }
 
 /*------------- Section Footer -------------*/
 
-footer{
+footer {
   padding: 1rem;
   background-color: var(--grisfonce);
 }
 
-.projet{
+.projet {
   color: var(--blanc);
   font-weight: 100;
   font-size: 15px;

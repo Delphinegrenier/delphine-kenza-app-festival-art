@@ -13,7 +13,7 @@
 
   <body data-bs-spy="scroll" data-bs-target="#navId">
     <header>
-      <nav class="navbar navbar-dark fixed-top">
+      <nav class="navbar navbar-dark bg-info fixed-top">
         <div class="container-fluid justify-content-between">
           <a href="#" class="navbar-brand order-2"
             ><img src="../assets/logo_cynetart.png" alt="" class="logo"
@@ -57,7 +57,8 @@
     
 
     <main>
-      <div class="search">
+      <div class="container-fluid">
+        <div class="search">
           <form>
             <div class="input-group justify-content-center">
               <span class="input-group-text bg-transparent"><i class="bi bi-search"></i></span>
@@ -72,19 +73,49 @@
               <button type="button" class="btn btn-outline-primary">Toutes</button>
             </li>
             <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-secondary">Concerts</button>
+              <button type="button" class="btn btn-outline-light">Concerts</button>
             </li>
             <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-secondary">Installations interactives</button>
+              <button type="button" class="btn btn-outline-light">Installations interactives</button>
             </li>
             <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-secondary">AR/VR</button>
+              <button type="button" class="btn btn-outline-light">AR/VR</button>
             </li>
             <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-secondary">Performances</button>
+              <button type="button" class="btn btn-outline-light">Performances</button>
             </li>
           </ul>
         </div>
+
+        <div id="vedette">
+          <section class="row mx-auto">
+            <h2 class="h5 text-light">En vedette</h2>
+            <div class="col-6 col-sm-5 col-md-4 col-lg-4 d-inline-block">
+              <a href="artwork.html" class="card bg-info mb-3">
+                <img src="../assets/artworks/cybernetic_garden_Maze-Space.png" class="card-img-top img-art">
+                  <div class="card-body">
+                    <h1 class="card-title h6">Cybernetic Garden</h6>
+                      <p class="text-light artist">Par MAZE/SPACE</p>
+                      <div>
+                        <i class="bi bi-calendar text-primary"></i>
+                        <p class="date d-inline-block text-primary">10 mars 2023</p>
+                        <i class="bi bi-clock-fill text-primary ms-2"></i>
+                        <p class="date d-inline-block text-primary text-end">18h</p>
+                      </div>
+                      <div>
+                        <img src="../assets/photo_profil.jpg" class="artist-photo" alt="" />
+                        <p class="informe d-inline-block text-primary">Plus d'info</p>
+                        <i class="bi bi-chevron-right text-primary"></i>
+                      </div>
+                  </div>
+                </a>
+            </div>
+          </section>
+        </div>
+        
+      </div>
+      
+
     </main>
 
     <footer>
@@ -94,7 +125,7 @@
           <p class="projet text-sm-start text-center"> Projet fictif réalisé dans le cadre du cours Optimisation Web 582-424MO. Ui de l’app créé par Kenza El Harrif.</p>
         </div>
         <div class="col-sm-6 text-center text-sm-end align-self-center">
-          <img class="timlogo" src="../assets/logo_montmorency.png" alt="">
+          <img class="timlogo" src="../assets/logo_Tim_blanc.png" alt="">
         </div>
       </div>
         
