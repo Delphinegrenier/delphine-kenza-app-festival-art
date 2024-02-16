@@ -85,8 +85,6 @@ div.hero .container {
   position: relative;
   overflow: hidden;
   border: 2px solid var(--vertpale);
-  max-width: 300px;
-  min-width: 280px;
 }
 
 .cadre-telephone iframe {
@@ -95,9 +93,6 @@ div.hero .container {
 }
 
 /*------------- Section Features -------------*/
-
-
-
 .card {
   margin-bottom: 20px;
   border: none;
@@ -119,6 +114,8 @@ div.hero .container {
 }
 
 .div-i i {
+  color: var(--vertfonce);
+  font-size: 25px;
   padding-top: 2px;
 }
 
@@ -137,11 +134,31 @@ div.hero .container {
 .section-testimonials img {
   height: 20vh;
   object-fit: cover;
-
+  object-position: 50% 50%;
 }
+
 
 .section-testimonials .card {
   box-shadow: 10px 10px 5px var(--noir);
+}
+
+.section-testimonials .card-body {
+  min-height: 200px;
+}
+
+.section-testimonials .div-i {
+  background-color: var(--vertfonce);
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  padding: 25px;
+  margin: 0;
+}
+
+.section-testimonials .div-i i {
+  color: white;
 }
 /*------------- Section Footer -------------*/
 footer {
