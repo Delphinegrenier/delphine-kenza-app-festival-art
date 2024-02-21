@@ -1,10 +1,10 @@
 :root {
-  --gris: #323232;
-  --grisfonce: #222222;
-  --noir: #161617;
-  --blanc: #ffffff;
-  --vertpale: #b8ffcc;
-  --vertfonce: #6a9275;
+  --bs-success: #323232;
+  --bs-info: #222222;
+  --bs-dark: #161617;
+  --bslight: #ffffff;
+  --bs-primary: #b8ffcc;
+  --bs-secondary: #6a9275;
   --Noto: "NotoSans", sans-serif;
 }
 
@@ -12,7 +12,7 @@
 
 /*------------- Styles Généraux -------------*/
 body {
-  background-color: var(--noir);
+  background-color: var(--bs-dark);
   padding-top: 80px;
   overflow-x: hidden;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 span .navbar-toggler-icon {
-  color: var(--blanc);
+  color: var(--bslight);
   width: 24px;
 }
 
@@ -47,24 +47,25 @@ a{
 }
 
 .form-control {
-  border-color: var(--vertpale);
+  border-color: var(--bs-primary);
   border-left: none;
   border-radius: 50px;
 }
 
 .form-control::placeholder {
-  color: var(--blanc);
+  color: var(--bslight);
   font-size: 11px;
 }
 
 .input-group-text {
   border-radius: 50px;
   border-right: none;
-  border-color: var(--vertpale);
-  color: var(--vertpale);
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
 }
 
 .recommend {
+  width: 1000px;
   overflow: hidden;
 }
 
@@ -83,24 +84,24 @@ a{
 }
 
 .card-vedette {
-  background-color: var(--grisfonce);
+  background-color: var(--bs-info);
   max-width: 200px;
   border-radius: 11px;
   border: none;
 }
 
 .card-vedette:hover {
-  background-color: var(--gris);
+  background-color: var(--bs-success);
 }
 
 .card-autre {
-  background-color: var(--grisfonce);
+  background-color: var(--bs-info);
   border-radius: 11px;
   border: none;
 }
 
 .card-autre:hover {
-  background-color: var(--gris);
+  background-color: var(--bs-success);
 }
 
 .card-body {
@@ -161,15 +162,48 @@ a{
   width: 140%;
 }
 
+/*------------- Section Main Artwork -------------*/
+
+.body-oeuvre{
+  padding-top: 0px;
+}
+
+.img-oeuvre{
+  background-color: var(--bs-success);
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 33vh;
+}
+
+.bi-heart-fill{
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  padding-left: 7.3px;
+  padding-top: 4.6px;
+  border-radius: 50px;
+  background-color: var(--bs-info);
+}
+
+.bi-chevron-left{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.titre-oeuvre{
+  font-size: 35px;
+}
+
 /*------------- Section Footer -------------*/
 
 footer {
   padding: 1rem;
-  background-color: var(--grisfonce);
+  background-color: var(--bs-info);
 }
 
 .projet {
-  color: var(--blanc);
+  color: var(--bslight);
   font-weight: 100;
   font-size: 15px;
 }
