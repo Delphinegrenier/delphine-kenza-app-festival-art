@@ -46,7 +46,7 @@ a{
   text-decoration: none;
 }
 
-.form-control {
+.form-search {
   border-color: var(--bs-primary);
   border-left: none;
   border-radius: 50px;
@@ -168,6 +168,13 @@ a{
   padding-top: 0px;
 }
 
+.oeuvre{
+  position: relative;
+  top: -15px;
+  z-index:1;
+  border-radius: 11px;
+}
+
 .img-oeuvre{
   background-color: var(--bs-success);
   width: 100%;
@@ -177,22 +184,64 @@ a{
 }
 
 .bi-heart-fill{
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  padding-left: 7.3px;
-  padding-top: 4.6px;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7.4px;
+  padding-top: 6px;
   border-radius: 50px;
-  background-color: var(--bs-info);
+  background-color: var(--bs-primary);
 }
 
 .bi-chevron-left{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .titre-oeuvre{
   font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.date-oeuvre{
+  font-size: 12px;
+}
+
+.place{
+  font-size: 12px;
+}
+
+.img-artist-card{
+  width: 100%;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  height: 25vh;
+  object-fit: cover;
+  object-position: 0px 45%;
+}
+
+.card-artist{
+  border-radius: 11px;
+}
+
+.text-taille{
+  font-size: 12px;
+}
+
+.a-propos{
+  font-size: 12px;
+}
+
+.accordion-item{
+  border: none;
+}
+
+.titre-section{
+  border-radius: 8px;
+}
+
+.btn-close{
+  color: var(--bslight);
 }
 
 /*------------- Section Footer -------------*/

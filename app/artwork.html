@@ -12,23 +12,89 @@
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#navId" class="body-oeuvre">
+    <!----------- SECTION HEADER ---------->
     <header>
       <nav class="navbar navbar-dark bg-transparent fixed-top">
         <div class="container-fluid justify-content-between">
-            <i class="bi bi-heart-fill text-primary order-3"></i>
+            <i class="bi bi-heart-fill text-secondary order-3"></i>
             <a href="index.html"><i class="bi bi-chevron-left text-light order-first"></i></a>
         </div>
       </nav>
     </header>
-
+    <!----------- SECTION MAIN ---------->
     <main>
       <img src="../assets/artworks/choros_Virtual-Choir.png" alt="" class="img-oeuvre">
-
-      <section class="oeuvre">
-        <h1 class="titre-oeuvre">Choros</h1>
+      <section class="oeuvre bg-dark">
+        <h1 class="titre-oeuvre pt-3 ms-3">Choros</h1>
+        <span class="me-3 ms-3">
+          <i class="bi bi-geo-fill text-primary place"></i>
+          <p class="text-primary d-inline place">Villa Wigman</p>
+        </span>
+        <span>
+          <i class="bi bi-calendar4-range text-primary date-oeuvre"></i>
+          <p class="text-primary d-inline date-oeuvre">19 juillet 2024</p>
+        </span>
+        <!----------- SECTION ARTISTE ---------->
+        <h2 class="h5 titre-section mx-3 mt-4 bg-info p-2">Artiste.s</h2>
+        <div class="card mx-3 bg-info card-artist">
+          <img src="../assets/artists/artiste_8.jpg" class="card-img-top img-artist-card">
+          <div class="card-body">
+            <h5 class="card-title text-light">Virtual Choir</h5>
+            <p class="card-text text-light text-taille">Virtual Choir, artiste sous pseudonyme, marie musique et réalité virtuelle pour créer des expériences artistiques avant-gardistes et immersives.</p>
+            <button type="button" class="btn btn-outline-primary my-1" data-bs-toggle="modal"
+            data-bs-target="#infoArtiste">En savoir plus</button>
+          </div>
+      <!----------- SECTION À PROPOS ---------->
+      </div>
+      <h2 class="h5 titre-section mx-3 mt-4 bg-info p-2">À propos de l'oeuvre</h2>
+      <div class="a-propos ms-4 mb-3">
+        <p class="text-primary mb-1">Performance en réalité virtuelle</p>
+        <p class="text-primary mb-1">Durée: 30 minutes</p>
+        <p class="text-primary mb-1">16 ans+</p>
+      </div>
+      <!----------- SECTION ACCORDEON ---------->
+      <div class="accordion mx-3 mt-4" id="accordeonForm">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="enteteForm">
+            <button class="accordion-button bg-secondary text-light py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm">
+            Réservez votre place
+            </button>
+          </h2>
+          <div id="collapseForm" class="accordion-collapse collapse show" 
+          aria-labelledby="enteteForm" data-bs-parent="#accordeonForm">
+            <div class="accordion-body">
+              <form action="">
+                <label for="inputEmail" class="mb-1">Courriel</label>
+                <input type="email" class="form-control mb-2 p-1" id="inputEmail" placeholder= "nom@example.com">
+                <label for="inputPrenom" class="mb-1">Prénom</label>
+                <input type="text" class="form-control mb-2 p-1" id="inputPrenom"  placeholder= "Prénom">
+                <label for="inputNom" class="mb-1">Nom</label>
+                <input type="text" class="form-control mb-2 p-1" id="inputNom"  placeholder= "Nom">
+                <label for="inputDate" class="mb-1">Date</label>
+                <input type="date" class="form-control mb-2 p-1" id="inputDate">
+                <button type="submit" class="btn btn-outline-secondary mt-3">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
-    </main>
+      <!----------- SECTION MODALE ---------->
+      <div class="modal fade" tabindex="-1" id="infoArtiste">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-secondary">
+              <h2 class="h5 modal-title text-light">Virtual Choir</h2>
+              <button class="btn-close close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <p class="p-3 text-taille">Derrière le pseudonyme de Virtual Choir se cache une artiste visionnaire qui excelle dans la création d'œuvres numériques et de réalité virtuelle. Son art transcende les conventions traditionnelles en fusionnant musique et technologie pour créer des expériences immersives uniques. À travers ses performances, Virtual Choir transporte son public dans des univers où les sons se mêlent harmonieusement à des paysages visuels numériques, offrant ainsi une expérience sensorielle inédite.
 
+              Chaque création de Virtual Choir repousse les limites de l'art en explorant les possibilités offertes par les avancées technologiques. Ses spectacles envoûtants invitent les spectateurs à une exploration interactive où la musique et la réalité virtuelle s'entrelacent pour créer des moments de contemplation et d'émerveillement. Sous le pseudonyme de Virtual Choir, l'artiste pionnière ouvre de nouveaux horizons créatifs et offre une vision audacieuse de l'avenir de l'expression artistique.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!----------- SECTION FOOTER ---------->
     <footer>
       <div class="container">
         <div class="row">
