@@ -7,6 +7,7 @@
     <title>Cynetart</title>
     <link rel="stylesheet" href="../scss/custom_bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/styles-app.css" />
   </head>
@@ -54,38 +55,30 @@
     </header>
     <!----------- SECTION MAIN ---------->
     <main>
-      <div class="container-fluid mx-1">
+      <div class="container-fluid px-0">
         <div class="search">
           <form>
-            <div class="input-group justify-content-center">
+            <div class="input-group justify-content-center mx-3 pe-4">
               <span class="input-group-text bg-transparent"><i class="bi bi-search"></i></span>
             <input class="form-control form-search me-1 text-light bg-transparent" type="search" placeholder="Rechercher une oeuvre, un artiste...">
             </div>
           </form>
         </div>
-        <div class="recommend mb-3">
-          <ul class="no-bullets">
-            <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-primary">Toutes</button>
-            </li>
-            <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-light">Concerts</button>
-            </li>
-            <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-light">Installations interactives</button>
-            </li>
-            <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-light">AR/VR</button>
-            </li>
-            <li class="d-inline-block">
-              <button type="button" class="btn btn-outline-light">Performances</button>
-            </li>
-          </ul>
+        <div class="swiper swiper-filters ps-3 mb-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-primary">Toutes</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">Concerts</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">Installations interactives</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">AR/VR</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">Performances</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">Projections/Immersion</button></div>
+            <div class="swiper-slide"><button type="button" class="btn btn-outline-light">AI/Machine learning</button></div>
+          </div>
         </div>
         <!----------- CARTES EN VEDETTE ---------->
         <div id="vedette" >
-          <h2 class="h5 text-light">En vedette</h2>
-          <section class="row gx-3 flex-nowrap">
+          <h2 class="h5 text-light ms-3">En vedette</h2>
+          <section class="row gx-3 flex-nowrap ms-2">
             <div class="col-6 col-md-3 col-lg-3 pe-0 ps-2">
               <a href="artwork.html" class="card card-vedette mb-3">
                 <img src="../assets/artworks/choros_Virtual-Choir.png" class="card-img-top img-art">
@@ -167,7 +160,7 @@
           </section>
         </div>
         <!----------- CARTES AUTRES ---------->
-        <div class="autres me-2 mb-3">
+        <div class="autres mb-3 mx-3">
           <h2 class="h5">Autres</h1>
           <section class="row">
             <div class="col-12 pb-3">
@@ -274,5 +267,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

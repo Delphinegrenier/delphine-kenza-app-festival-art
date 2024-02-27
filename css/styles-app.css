@@ -64,9 +64,11 @@ a{
   color: var(--bs-primary);
 }
 
-.recommend {
-  width: 1000px;
-  overflow: hidden;
+.swiper-slide{
+  width: auto;
+}
+.swiper{
+  width: auto;
 }
 
 .no-bullets {
