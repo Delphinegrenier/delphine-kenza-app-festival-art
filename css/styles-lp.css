@@ -2,9 +2,10 @@
   --bs-success: #323232;
   --bs-info: #222222;
   --bs-dark: #161617;
-  --bslight: #ffffff;
+  --bs-light: #ffffff;
   --bs-primary: #b8ffcc;
   --bs-secondary: #6a9275;
+  --bs-warning: #f3fce9;
   --Noto: "NotoSans", sans-serif;
   --spacer: 1rem;
 }
@@ -121,6 +122,86 @@ div.hero .container {
   padding-top: 2px;
 }
 
+/*------------- Section View More -------------*/
+
+.section-view-more {
+  background-color: var(--bs-warning);
+}
+
+.arrow {
+  color: var(--bs-secondary)
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container .swiper-button-prev {
+  left: -40px;
+}
+
+.swiper-container .swiper-button-next {
+  right: -40px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-active img {
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  background-color: green;
+  box-sizing: border-box;
+}
+/*-- Border téléphone créer par : /codepen.io/odil-io/pen/JZrRMX --*/
+
+.phone,
+.phone img {
+  height: 100%;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone .notch-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.phone .notch-container .notch {
+  width: 20vh;
+  height: 3.75vh;
+  margin: 0 auto;
+  background-color: #111;
+  border-bottom-left-radius: 2.334vh;
+  border-bottom-right-radius: 2.334vh;
+}
+
+.phone img {
+  display: block;
+  border: 1.334vh solid #111;
+  border-radius: 4.5vh;
+  background-color: #111;
+}
+
 /*------------- Section Testimonials -------------*/
 
 .section-testimonials {
@@ -220,7 +301,7 @@ div.hero .container {
   box-sizing: border-box;
 }
 
-.modal .btn{
+.modal .btn {
   border: 2px solid var(--bs-secondary);
 }
 
@@ -229,6 +310,7 @@ div.hero .container {
   background-color: transparent;
   color: var(--bs-dark)
 }
+
 
 /*------------- Section Footer -------------*/
 footer {
