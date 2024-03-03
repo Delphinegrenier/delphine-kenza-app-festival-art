@@ -67,8 +67,12 @@ a{
 .swiper-slide{
   width: auto;
 }
-.swiper{
+.swiper-filters{
   width: auto;
+}
+
+.swiper-slide-artworks{
+  width: 50%;
 }
 
 .no-bullets {
@@ -161,7 +165,7 @@ a{
 }
 
 .vedette {
-  width: 140%;
+  overflow:hidden;
 }
 
 /*------------- Section Main Artwork -------------*/
@@ -186,13 +190,8 @@ a{
 }
 
 .bi-heart-fill{
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  padding-left: 7.4px;
-  padding-top: 6px;
-  border-radius: 50px;
-  background-color: var(--bs-primary);
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .bi-chevron-left{

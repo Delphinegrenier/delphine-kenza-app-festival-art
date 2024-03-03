@@ -1,5 +1,12 @@
+
 var swiper = new Swiper(".swiper-filters", {
   slidesPerView: 'auto',
+  freeMode: true,
+});
+
+var swiperArtworks = new Swiper(".swiper-featured-artworks", {
+  slidesPerView: 'auto',
+  spaceBetween: 8,
   freeMode: true,
 });
 
