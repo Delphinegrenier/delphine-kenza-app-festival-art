@@ -23,6 +23,11 @@ body {
   max-width: 134px;
 }
 
+.timlogo{
+  fill: var(--bs-primary);
+  max-width: 100px;
+}
+
 .profil {
   width: 35px;
   height: 35px;
@@ -191,12 +196,13 @@ a{
 
 .bi-heart-fill{
   cursor: pointer;
-  font-size: 18px;
+  padding: 6px 8.8px 3.5px 9px;
+  border-radius: 50%;
+  font-size: 16px;
 }
 
 .bi-chevron-left{
   font-size: 20px;
-  font-weight: bold;
 }
 
 .titre-oeuvre{
@@ -244,6 +250,8 @@ a{
 .btn-close{
   color: var(--bslight);
 }
+
+
 
 /*------------- Section Footer -------------*/
 
