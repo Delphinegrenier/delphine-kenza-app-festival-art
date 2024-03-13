@@ -14,14 +14,14 @@
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navigation" tabindex="0">
   <header>
 
     <!----------- NAVIGUATION ---------->
 
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top ">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#appli"><img class="img-fluid mb-1" src="./assets/logo_cynetart.png"
+        <a class="navbar-brand" href="#navigation"><img class="img-fluid mb-1" src="./assets/logo_cynetart.png"
             alt="logo"></a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
           aria-expanded="false" aria-label="Affichage/masquage de la navigation">
@@ -36,43 +36,46 @@
               <a href="#fonctionnalites" class="nav-link">Fonctionnalités</a>
             </li>
             <li class="nav-item">
-              <a href="#tarifs" class="nav-link">Tarifs</a>
+              <a href="#view-more" class="nav-link">L'interface</a>
+            </li>
+            <li class="nav-item">
+              <a href="#temoignages" class="nav-link">Témoignages</a>
             </li>
             <li class="nav-item">
               <a href="#savoirplus" class="nav-link">En savoir plus</a>
             </li>
             <li class="nav-item">
-              <a href="#temoignages" class="nav-link">Témoignages</a>
+              <a href="#infolettre" class="nav-link">Infolettre</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <main data-bs-spy="scroll" data-bs-target="#appli" tabindex="0">
+  <main>
 
     <!----------- SECTION HÉRO ---------->
 
-    <div class="hero" id="appli">
+    <section class="hero" id="appli">
       <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center ">
           <div class="col-10 col-lg-6 text-center text-lg-start pt-4">
             <h1>Découvrez l'appli officielle du festival</h1>
             <h2>Cynetart</h2>
-            <p class="mt-5 mb-3">Tirez profit de cette appli qui rendra votre <br> expérience <strong>fluide</strong> et
+            <p class="mt-4 mb-3">Tirez profit de cette appli qui rendra votre <br> expérience <strong>fluide</strong> et
               <strong>sans
                 compromis</strong>
             </p>
             <button type="button" class="btn btn-outline-primary">Téléchargez maintenant</button>
           </div>
-          <div class="col-10 col-lg-3 offset-lg-3 d-flex justify-content-center pt-lg-4">
+          <div class="col-10 col-lg-4 offset-lg-2 d-flex justify-content-center pt-lg-4">
             <div class="cadre-telephone">
               <iframe src="./app/index.html"></iframe>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!----------- SECTION FONCTIONNALITÉS ---------->
 
@@ -182,11 +185,11 @@
       <div class="container py-5">
         <div class="row test-center">
           <div class="col-12 text-center">
-            <h4 class="mt-3 mb-5 h3">Prévisualisez l'interface de l'appli</h3>
+            <h3 class="mt-3 mb-5">Prévisualisez l'interface de l'appli</h3>
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-10 col-md-12">
+          <div class="col-10 col-lg-12">
             <div class="swiper-container">
               <div class="swiper swiper-screenshots">
                 <div class="swiper-wrapper">
@@ -323,11 +326,11 @@
 
     <!----------- SECTION FAQ ---------->
 
-    <div class="section-faq bg-light" id="tarifs">
+    <div class="section-faq bg-light" id="savoirplus">
       <div class="container py-5">
         <div class="row">
           <div class="col-12 text-center">
-            <h4 class="mt-3 mb-5 h3">FAQ - Foire aux questions</h3>
+            <h3 class="mt-3 mb-5">FAQ - Foire aux questions</h3>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -337,13 +340,13 @@
                 <h5 class="accordion-header" id="question1">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reponse1"
                     aria-expanded="true" aria-controls="reponse1">
-                    Question 1
+                    Comment puis-je télécharger l'application ?
                   </button>
                 </h5>
                 <div id="reponse1" class="accordion-collapse collapse" aria-labelledby="question1"
                   data-bs-parent="#FAQ">
                   <div class="accordion-body">
-                    Réponse #1....
+                    Vous pouvez télécharger l'application sur le site web de Cynetart dans la <b>section "L'appli"</b> ou lors du festival, en scannant <b>un code QR</b> à l'entrée de l'événement.
                   </div>
                 </div>
               </div>
@@ -351,13 +354,13 @@
                 <h5 class="accordion-header" id="question2">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reponse2"
                     aria-expanded="true" aria-controls="reponse2">
-                    Question 2
+                    Est-ce que l'application est gratuite ?
                   </button>
                 </h5>
                 <div id="reponse2" class="accordion-collapse collapse" aria-labelledby="question2"
                   data-bs-parent="#FAQ">
                   <div class="accordion-body">
-                    Réponse #2....
+                    <b>Oui</b>, l'application et ses fonctionnalités sont gratuites. 
                   </div>
                 </div>
               </div>
@@ -365,13 +368,13 @@
                 <h5 class="accordion-header" id="question3">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reponse3"
                     aria-expanded="true" aria-controls="reponse3">
-                    Question 3
+                    Dois-je me créer un compte pour utiliser l'application?
                   </button>
                 </h5>
                 <div id="reponse3" class="accordion-collapse collapse" aria-labelledby="question3"
                   data-bs-parent="#FAQ">
                   <div class="accordion-body">
-                    Réponse #3....
+                    Vous n'êtes <b>pas obligé de créer un compte</b> pour utiliser l'application. Cependant, pour une expérience plus personnalisée, nous vous recommandons vivement de le faire. 
                   </div>
                 </div>
               </div>
@@ -379,13 +382,13 @@
                 <h5 class="accordion-header" id="question4">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reponse4"
                     aria-expanded="true" aria-controls="reponse4">
-                    Question 4
+                    Est-ce que l'application fonctionne hors ligne ?
                   </button>
                 </h5>
                 <div id="reponse4" class="accordion-collapse collapse" aria-labelledby="question4"
                   data-bs-parent="#FAQ">
                   <div class="accordion-body">
-                    Réponse #4....
+                    <b>L'application fonctionne hors ligne</b> pour la plupart des fonctionnalités, mais l'achat de billets et certains contrôles d'œuvres <b>nécessitent une connexion Wi-Fi</b>. Une connexion Wi-Fi sera disponible gratuitement lors de l'événement.
                   </div>
                 </div>
               </div>
@@ -396,13 +399,13 @@
 
       <!----------- SECTION INFOLETTRE ---------->
 
-      <div class="section-infolettre bg-success py-5 mt-5" id="savoirplus">
+      <div class="section-infolettre bg-success py-5 mt-5" id="infolettre">
         <div class="container">
           <div class="row d-flex justify-content-md-end">
             <div class="col col-md-6 text-center text-md-start py-5 px-4">
               <h5 class="h3">Infolettre</h5>
               <p class="my-3">Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jour et
-                nouvelles fonctionnalités de l’appli, en plus de recevoir en primeur les détails des prochaines éditions
+                nouvelles fonctionnalités de l'appli, en plus de recevoir en primeur les détails des prochaines éditions
                 du festival.</p>
               <button type="button" data-bs-toggle="modal" data-bs-target="#infoModal"
                 class="btn btn-secondary btn-lg px-5">Je m'abonne !</button>
@@ -437,12 +440,12 @@
 
   <!----------- SECTION PIED DE PAGE ---------->
 
-  <footer>
+  <footer class="bg-secondary">
     <div class="container">
-      <div class="row">
+      <div class="row py-3 mt-2">
         <div class="col-lg-2 text-center text-lg-start">Delphine Grenier <br> Kenza El Harrif</div>
         <div class="col-lg-10 text-center text-lg-end"><a
-            href="https://github.com/Delphinegrenier/delphine-kenza-app-festival-art">https://github.com/Delphinegrenier/delphine-kenza-app-festival-art</a>
+            href="https://github.com/Delphinegrenier/delphine-kenza-app-festival-art">Lien vers GitHub</a>
           <br>©2024
         </div>
       </div>

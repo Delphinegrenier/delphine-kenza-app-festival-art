@@ -23,7 +23,7 @@ body {
   max-width: 134px;
 }
 
-.timlogo{
+.timlogo {
   fill: var(--bs-primary);
   max-width: 100px;
 }
@@ -41,13 +41,13 @@ span .navbar-toggler-icon {
 }
 
 .navbar-toggler {
-  padding:0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   border: none;
 }
 
 /*------------- Section Main -------------*/
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -69,14 +69,14 @@ a{
   color: var(--bs-primary);
 }
 
-.swiper-slide{
+.swiper-slide {
   width: auto;
 }
-.swiper-filters{
+.swiper-filters {
   width: auto;
 }
 
-.swiper-slide-artworks{
+.swiper-slide-artworks {
   width: 50%;
 }
 
@@ -170,23 +170,23 @@ a{
 }
 
 .vedette {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 /*------------- Section Main Artwork -------------*/
 
-.body-oeuvre{
+.body-oeuvre {
   padding-top: 0px;
 }
 
-.oeuvre{
+.oeuvre {
   position: relative;
   top: -15px;
-  z-index:1;
+  z-index: 1;
   border-radius: 11px;
 }
 
-.img-oeuvre{
+.img-oeuvre {
   background-color: var(--bs-success);
   width: 100%;
   object-fit: cover;
@@ -194,31 +194,31 @@ a{
   height: 33vh;
 }
 
-.bi-heart-fill{
+.bi-heart-fill {
   cursor: pointer;
   padding: 6px 8.8px 3.5px 9px;
   border-radius: 50%;
   font-size: 16px;
 }
 
-.bi-chevron-left{
+.bi-chevron-left {
   font-size: 20px;
 }
 
-.titre-oeuvre{
+.titre-oeuvre {
   font-size: 35px;
   margin-bottom: 0px;
 }
 
-.date-oeuvre{
+.date-oeuvre {
   font-size: 12px;
 }
 
-.place{
+.place {
   font-size: 12px;
 }
 
-.img-artist-card{
+.img-artist-card {
   width: 100%;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
@@ -227,31 +227,29 @@ a{
   object-position: 0px 45%;
 }
 
-.card-artist{
+.card-artist {
   border-radius: 11px;
 }
 
-.text-taille{
+.text-taille {
   font-size: 12px;
 }
 
-.a-propos{
+.a-propos {
   font-size: 12px;
 }
 
-.accordion-item{
+.accordion-item {
   border: none;
 }
 
-.titre-section{
+.titre-section {
   border-radius: 8px;
 }
 
-.btn-close{
+.btn-close {
   color: var(--bslight);
 }
-
-
 
 /*------------- Section Footer -------------*/
 

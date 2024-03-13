@@ -11,14 +11,12 @@ var swiperArtworks = new Swiper(".swiper-featured-artworks", {
 });
 
 var swiperScreenshots = new Swiper(".swiper-screenshots", {
-  // Default parameters
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
   centeredSlides: true,
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
+
     1200: {
       slidesPerView: 3,
       spaceBetween: 50,
@@ -28,4 +26,16 @@ var swiperScreenshots = new Swiper(".swiper-screenshots", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  
+});
+/*Pour montrer les 3 cartes au chargement de la page : 
+ Créer un écouteur simple pour l'événement shown.bs.tab et ensuite appeler update() uniquement si nécessaire. github.com/nolimits4web/swiper/issues/2494*/
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+  var paneTarget = $(e.target).attr('href');
+  var $thePane = $('.tab-pane' + paneTarget);
+  var paneIndex = $thePane.index();
+  if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
+    swiperScreenshots[paneIndex].update();
+  }
 });
