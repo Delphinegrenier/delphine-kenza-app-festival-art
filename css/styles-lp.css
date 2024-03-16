@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+
 :root {
   --bs-success: #323232;
   --bs-info: #222222;
@@ -7,15 +9,11 @@
   --bs-secondary: #6a9275;
   --bs-warning: #f3fce9;
   --Noto: "NotoSans", sans-serif;
-  --spacer: 1rem;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 /*------------- Styles Généraux -------------*/
 body {
   background-color: var(--bs-dark);
-  overflow-x: hidden;
 }
 
 h3,
@@ -43,27 +41,6 @@ h3,
 
   h4,
   h4 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  h1,
-  .h1 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-  h2,
-  .h2 {
-    font-size: 60px;
-  }
-  h3,
-  .h3 {
-    font-size: 37px;
-  }
-
-  h4,
-  .h4 {
     font-size: 20px;
   }
 }
@@ -327,7 +304,7 @@ section.hero .row {
 
 /*------------- Section Infolettre -------------*/
 
-#infolettre .col {
+#infolettre .col-12 {
   position: relative;
   box-shadow: 10px 10px 10px var(--bs-dark);
   background-color: #ffffffee;
@@ -373,18 +350,20 @@ section.hero .row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   height: 43px;
+  border-radius: 100px;
 }
 
 .modal .btn {
   border: 2px solid var(--bs-secondary);
+  border-radius: 100px;
 }
 
 .modal .btn.annuler:hover {
   border: 2px solid var(--bs-dark);
   background-color: transparent;
   color: var(--bs-dark);
+  border-radius: 100px;
 }
 
 /*------------- Section Footer -------------*/
